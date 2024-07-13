@@ -5,14 +5,13 @@ import Isleand from '../models/Island'
 import Sky from '../models/Sky'
 import Bird from '../models/Bird'
 import Plane from '../models/Plane'
+import HomaInfo from '../components/HomaInfo'
 
 
 
 
 
-{/* <div className=' absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
-            Popup
-        </div> */}
+
 const Home = () => {
      const[isRotating, setIsRotating] = useState(false);
     const [currentStage, setCurrentStage] = useState(1);
@@ -49,6 +48,9 @@ const Home = () => {
     const [planeScale, planePosition] = adjustPlanForScreenSize();
   return (
     <section className='w-full h-screen relative'>
+      <div className=' absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
+            {currentStage && <HomaInfo currentStage={currentStage}/>}
+        </div>
       <Canvas 
       className={` w-full h-screen bg-transparent ${ isRotating ? 'cursor-grabbing': 'cursor-grab'} `}
       camera={{near: 0.1, far:1000}}
