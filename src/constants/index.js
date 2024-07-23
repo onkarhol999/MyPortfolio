@@ -25,18 +25,10 @@ import {
     threads,
     typescript
 } from "../assets/icons";
+import logo from '../assets/icons/Logo.png'
 
 export const skills = [
-    {
-        imageUrl: css,
-        name: "CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: express,
-        name: "Express",
-        type: "Backend",
-    },
+   
     {
         imageUrl: git,
         name: "Git",
@@ -63,16 +55,6 @@ export const skills = [
         type: "Database",
     },
     {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
-    },
-    {
-        imageUrl: mui,
-        name: "Material-UI",
-        type: "Frontend",
-    },
-    {
         imageUrl: nextjs,
         name: "Next.js",
         type: "Frontend",
@@ -93,11 +75,6 @@ export const skills = [
         type: "State Management",
     },
     {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
-    },
-    {
         imageUrl: tailwindcss,
         name: "Tailwind CSS",
         type: "Frontend",
@@ -112,10 +89,10 @@ export const skills = [
 export const experiences = [
     {
         title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        company_name: "AV-Digital Solution",
+        icon: logo,
         iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        date: "April 2024 - Sept 2024",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -124,8 +101,8 @@ export const experiences = [
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
+        title: "Dummy",
+        company_name: "Dummy",
         icon: tesla,
         iconBg: "#fbc3bc",
         date: "Jan 2021 - Feb 2022",
@@ -137,8 +114,8 @@ export const experiences = [
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
+        title: "Dummy",
+        company_name: "Dummy",
         icon: shopify,
         iconBg: "#b7e4c7",
         date: "Jan 2022 - Jan 2023",
@@ -150,8 +127,8 @@ export const experiences = [
         ],
     },
     {
-        title: "Full stack Developer",
-        company_name: "Meta",
+        title: "Dummy",
+        company_name: "Dummy",
         icon: meta,
         iconBg: "#a2d2ff",
         date: "Jan 2023 - Present",

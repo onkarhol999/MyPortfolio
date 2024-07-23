@@ -13,11 +13,14 @@ const InfoBox = ({text, link, btnText})=>(
 )
 
 const renderContext = {
-  1: <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-blue  py-4 px-8 text-white mx-5'>Hi, I am <span className=' font-semibold'>Onkar</span>👋 <br /> A Software Engineer From India</h1>,
+  1: <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5'>
+  Hi, I am <span className='font-semibold'>Onkar</span>👋 <br /> A Software Engineer From India
+  <p className='text-sm mt-2'>Use the &larr; and &rarr; keys for smooth scrolling</p>
+</h1>,
   2: <InfoBox
         text="Versatile in a wide range of tech skills spanning from web development to data analytics and many more."
         link="/about"
-        btnText="Explore My Tech Skills "
+        btnText="Know Me Better "
     />,
   3: <InfoBox
         text="I've delivered impactful solutions through completion of diverse and challenging projects."

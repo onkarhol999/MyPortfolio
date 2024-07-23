@@ -5,6 +5,10 @@ import Fox from '../models/Fox'
 import  Loader  from '../components/Loader';
 import useAlert from '../hooks/useAlert';
 import Alert from '../components/Alert';
+import { linkedin,twitter } from '../assets/icons';
+import instagram from '../Images/instagram.svg'
+import  github  from '../Images/github.svg';
+import photo from '../Images/Photo.jpg'
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -123,6 +127,15 @@ const Contact = () => {
         >
            {isloading ? 'Sending...':'Send Message'}
         </button>
+        <h3 className='subhead-text text-[#0ea5e9] font-semibold'>Social Connect</h3><br /><br />
+        
+              <div className="flex items-center space-x-4 justify-center gap-10">
+                <a href="https://www.linkedin.com/in/onkar-hol-729101231/"  target="_blank"><img src={linkedin} alt="LinkedIn" className="w-12 h-auto" /></a> 
+                  <a href="https://x.com/onkar_999"  target="_blank"><img src={twitter} alt="Twitter" className="w-12 h-auto" /></a>
+             <a href="https://www.instagram.com/onkarhol_999/"  target="_blank"><img src={instagram} alt="" className="w-12 h-auto"  /></a>
+             <a href="https://github.com/onkarhol999"  target="_blank"><img src={github} alt="Twitter" className="w-12 h-auto" /></a>
+
+             </div>
       </form>
       </div>
       <div className='lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]'>
@@ -147,6 +160,7 @@ const Contact = () => {
                </Suspense>
              </Canvas>
       </div>
+
     </section>
   )
 }
